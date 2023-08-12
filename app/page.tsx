@@ -6,7 +6,8 @@ import { Suspense } from 'react';
 export const runtime = 'edge';
 
 export const metadata = {
-  description: 'High-performance ecommerce store built with Next.js, Vercel, and Shopify.',
+  description:
+    'Jeetah: Sport & Lifestyle Essentials. Empower Your Journey with Style, Comfort & Quality. Be the Champion You Are. Run with Victory. 🐆🏆',
   openGraph: {
     type: 'website'
   }

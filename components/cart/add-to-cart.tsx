@@ -52,7 +52,7 @@ export function AddToCart({
         });
       }}
       className={clsx(
-        'relative flex w-full items-center justify-center rounded-full bg-blue-600 p-4 tracking-wide text-white hover:opacity-90',
+        'relative flex w-full items-center justify-center rounded-full bg-blue-600 p-4 tracking-wide text-gray-50 hover:opacity-90',
         {
           'cursor-not-allowed opacity-60 hover:opacity-60': !availableForSale || !selectedVariantId,
           'cursor-not-allowed': isPending
@@ -60,7 +60,7 @@ export function AddToCart({
       )}
     >
       <div className="absolute left-0 ml-4">
-        {!isPending ? <PlusIcon className="h-5" /> : <LoadingDots className="mb-3 bg-white" />}
+        {!isPending ? <PlusIcon className="h-5" /> : <LoadingDots className="mb-3 bg-gray-50" />}
       </div>
       <span>{availableForSale ? 'Add To Cart' : 'Out Of Stock'}</span>
     </button>

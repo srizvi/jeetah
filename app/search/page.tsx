@@ -7,7 +7,8 @@ export const runtime = 'edge';
 
 export const metadata = {
   title: 'Search',
-  description: 'Search for products in the store.'
+  description:
+    'Search for products on Jeetah. Empower Your Journey with Style, Comfort & Quality. Be the Champion You Are. 🐆🏆'
 };
 
 export default async function SearchPage({

@@ -24,7 +24,7 @@ export function Gallery({ images }: { images: { src: string; altText: string }[]
   const previousUrl = createUrl(pathname, previousSearchParams);
 
   const buttonClassName =
-    'h-full px-6 transition-all ease-in-out hover:scale-110 hover:text-black dark:hover:text-white flex items-center justify-center';
+    'h-full px-6 transition-all ease-in-out hover:scale-110 hover:text-gray-950 dark:hover:text-gray-50 flex items-center justify-center';
 
   return (
     <>
@@ -42,7 +42,7 @@ export function Gallery({ images }: { images: { src: string; altText: string }[]
 
         {images.length > 1 ? (
           <div className="absolute bottom-[15%] flex w-full justify-center">
-            <div className="mx-auto flex h-11 items-center rounded-full border border-white bg-neutral-50/80 text-neutral-500 backdrop-blur dark:border-black dark:bg-neutral-900/80">
+            <div className="mx-auto flex h-11 items-center rounded-full border border-gray-100 bg-gray-100 text-gray-500 backdrop-blur dark:border-[#240934] dark:bg-[#240934]">
               <Link
                 aria-label="Previous product image"
                 href={previousUrl}
@@ -51,7 +51,7 @@ export function Gallery({ images }: { images: { src: string; altText: string }[]
               >
                 <ArrowLeftIcon className="h-5" />
               </Link>
-              <div className="mx-1 h-6 w-px bg-neutral-500"></div>
+              <div className="mx-1 h-6 w-px bg-gray-500"></div>
               <Link
                 aria-label="Next product image"
                 href={nextUrl}

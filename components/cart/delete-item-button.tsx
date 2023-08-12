@@ -28,16 +28,16 @@ export default function DeleteItemButton({ item }: { item: CartItem }) {
       }}
       disabled={isPending}
       className={clsx(
-        'ease flex h-[17px] w-[17px] items-center justify-center rounded-full bg-neutral-500 transition-all duration-200',
+        'ease flex h-[17px] w-[17px] items-center justify-center rounded-full bg-gray-500 transition-all duration-200',
         {
           'cursor-not-allowed px-0': isPending
         }
       )}
     >
       {isPending ? (
-        <LoadingDots className="bg-white" />
+        <LoadingDots className="bg-gray-50" />
       ) : (
-        <XMarkIcon className="hover:text-accent-3 mx-[1px] h-4 w-4 text-white dark:text-black" />
+        <XMarkIcon className="hover:text-accent-3 mx-[1px] h-4 w-4 text-gray-50 dark:text-gray-950" />
       )}
     </button>
   );

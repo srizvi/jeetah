@@ -15,8 +15,8 @@ export const metadata = {
     template: `%s | ${SITE_NAME}`
   },
   robots: {
-    follow: true,
-    index: true
+    follow: false,
+    index: false
   },
   ...(TWITTER_CREATOR &&
     TWITTER_SITE && {
@@ -37,7 +37,7 @@ const inter = Inter({
 export default async function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" className={inter.variable}>
-      <body className="bg-neutral-50 text-black selection:bg-teal-300 dark:bg-neutral-900 dark:text-white dark:selection:bg-pink-500 dark:selection:text-white">
+      <body className="bg-gray-100 text-gray-950 selection:bg-teal-300 dark:bg-[#0C0311] dark:text-gray-50 dark:selection:bg-pink-500 dark:selection:text-gray-50">
         <Navbar />
         <Suspense>
           <main>{children}</main>
