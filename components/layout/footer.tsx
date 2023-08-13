@@ -22,8 +22,10 @@ export default async function Footer() {
             className="flex items-center gap-2 text-gray-950 dark:text-gray-50 md:pt-1"
             href="/"
           >
-            <LogoSquare size="sm" />
-            <span className="uppercase">{SITE_NAME}</span>
+            <LogoSquare />
+            <span className="text-base font-black uppercase tracking-wider lg:text-lg">
+              {SITE_NAME}
+            </span>
           </Link>
         </div>
         <Suspense
@@ -41,7 +43,7 @@ export default async function Footer() {
           <FooterMenu menu={menu} />
         </Suspense>
       </div>
-      <div className="border-t border-gray-200 py-6 text-sm dark:border-gray-700">
+      <div className="border-t border-gray-200 py-6 text-sm text-gray-600 dark:border-gray-700 dark:text-gray-200">
         <div className="mx-auto flex w-full max-w-7xl flex-col items-center gap-1 px-4 md:flex-row md:gap-0 md:px-4 xl:px-0">
           <p>
             &copy; {copyrightDate} {copyrightName}
