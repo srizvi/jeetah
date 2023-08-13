@@ -9,8 +9,8 @@ export const metadata = {
   description:
     'Jeetah: Sport & Lifestyle Essentials. Empower Your Journey with Style, Comfort & Quality. Be the Champion You Are. Run with Victory. 🐆🏆',
   openGraph: {
-    type: 'website'
-  }
+    type: 'website',
+  },
 };
 
 export default async function HomePage() {

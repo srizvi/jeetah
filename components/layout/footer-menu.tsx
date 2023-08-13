@@ -21,8 +21,8 @@ const FooterMenuItem = ({ item }: { item: Menu }) => {
         className={clsx(
           'block p-2 text-lg underline-offset-4 hover:text-gray-950 hover:underline dark:hover:text-gray-300 md:inline-block md:text-sm',
           {
-            'text-gray-950 dark:text-gray-300': active
-          }
+            'text-gray-950 dark:text-gray-300': active,
+          },
         )}
       >
         {item.title}
