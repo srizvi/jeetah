@@ -7,10 +7,10 @@ export default function robots() {
     rules: [
       {
         userAgent: '*',
-        disallow: '/'
-      }
+        disallow: '/',
+      },
     ],
     sitemap: `${baseUrl}/sitemap.xml`,
-    host: baseUrl
+    host: baseUrl,
   };
 }

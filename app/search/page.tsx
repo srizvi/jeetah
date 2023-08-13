@@ -8,16 +8,17 @@ export const runtime = 'edge';
 export const metadata = {
   title: 'Search',
   description:
-    'Search for products on Jeetah. Empower Your Journey with Style, Comfort & Quality. Be the Champion You Are. 🐆🏆'
+    'Search for products on Jeetah. Empower Your Journey with Style, Comfort & Quality. Be the Champion You Are. 🐆🏆',
 };
 
 export default async function SearchPage({
-  searchParams
+  searchParams,
 }: {
   searchParams?: { [key: string]: string | string[] | undefined };
 }) {
   const { sort, q: searchValue } = searchParams as { [key: string]: string };
-  const { sortKey, reverse } = sorting.find((item) => item.slug === sort) || defaultSort;
+  const { sortKey, reverse } =
+    sorting.find((item) => item.slug === sort) || defaultSort;
 
   const products = await getProducts({ sortKey, reverse, query: searchValue });
   const resultsText = products.length > 1 ? 'results' : 'result';

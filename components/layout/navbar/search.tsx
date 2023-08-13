@@ -1,10 +1,9 @@
 'use client';
 
-import { useRouter, useSearchParams } from 'next/navigation';
-import { useEffect, useState } from 'react';
-
 import { MagnifyingGlassIcon } from '@heroicons/react/24/outline';
 import { createUrl } from 'lib/utils';
+import { useRouter, useSearchParams } from 'next/navigation';
+import { useEffect, useState } from 'react';
 
 export default function Search() {
   const router = useRouter();
@@ -32,7 +31,10 @@ export default function Search() {
   }
 
   return (
-    <form onSubmit={onSubmit} className="w-max-[550px] relative w-full lg:w-80 xl:w-full">
+    <form
+      onSubmit={onSubmit}
+      className="w-max-[550px] relative w-full lg:w-80 xl:w-full"
+    >
       <input
         type="text"
         name="search"
