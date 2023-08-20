@@ -8,7 +8,7 @@ Born in the bustling heart of South Asia, Jeetah's name pays homage to the Urdu 
 
 Our founders were pioneers in technical apparel and innovative design. They witnessed firsthand the transformative power of sports and movement in unlocking human potential. They envisioned a brand that fueled excellence both on and off the field.
 
-So in 20xx, Jeetah came to life - a revolution to awaken the win-streak within. Our goal? To equip generations to seize every finish line and fully unlock their capabilities.
+So in 2023, Jeetah came to life - a revolution to awaken the win-streak within. Our goal? To equip generations to seize every finish line and fully unlock their capabilities.
 
 ## Why the Fastest Ecommerce Platform?
 
