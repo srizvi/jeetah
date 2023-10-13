@@ -100,8 +100,9 @@ export function VariantSelector({
               className={clsx(
                 'flex min-w-[48px] items-center justify-center rounded-full border bg-gray-100 px-2 py-1 text-sm dark:border-gray-800 dark:bg-[#0C0311] dark:text-gray-50 lg:text-base',
                 {
-                  'cursor-default ring-2 ring-blue-600': isActive,
-                  'ring-1 ring-transparent transition duration-300 ease-in-out hover:scale-110 hover:ring-blue-600 ':
+                  'cursor-default ring-2 ring-[#08ABD9] dark:ring-[#09bcef]':
+                    isActive,
+                  'ring-1 ring-transparent transition duration-300 ease-in-out hover:scale-110 hover:ring-[#08ABD9] dark:hover:ring-[#09bcef] ':
                     !isActive && isAvailableForSale,
                   'relative z-10 cursor-not-allowed overflow-hidden bg-gray-100 text-gray-500 ring-1 ring-gray-300 before:absolute before:inset-x-0 before:-z-10 before:h-px before:-rotate-45 before:bg-gray-300 before:transition-transform dark:bg-gray-900 dark:text-gray-400 dark:ring-gray-700 before:dark:bg-gray-700':
                     !isAvailableForSale,

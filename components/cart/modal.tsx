@@ -194,7 +194,7 @@ export default function CartModal({ cart }: { cart: Cart | undefined }) {
                   </div>
                   <a
                     href={cart.checkoutUrl}
-                    className="block w-full rounded-full bg-blue-600 p-3 text-center text-sm font-medium text-gray-50 opacity-90 hover:opacity-100"
+                    className="block w-full rounded-full bg-[#08ABD9] p-3 text-center text-sm font-medium text-gray-50 opacity-90 hover:opacity-100 dark:bg-[#09bcef]"
                   >
                     Proceed to Checkout
                   </a>
