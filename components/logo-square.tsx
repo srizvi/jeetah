@@ -6,7 +6,7 @@ export default function LogoSquare({ size }: { size?: 'sm' | undefined }) {
   return (
     <div
       className={clsx(
-        'flex flex-none items-center justify-center border border-gray-200 bg-gray-50 shadow-md dark:border-gray-800 dark:bg-[#0c050f] dark:shadow dark:shadow-[#09bcef]',
+        'flex flex-none items-center justify-center border border-gray-200 bg-gray-50 shadow-md dark:border-gray-800 dark:bg-[#0c050f] dark:shadow dark:shadow-cyan-400/20',
         {
           'h-[40px] w-[40px] rounded-xl': !size,
           'h-[30px] w-[30px] rounded-lg': size === 'sm',
